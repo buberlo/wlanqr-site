@@ -35,19 +35,19 @@
 <p>Es gibt kein Konto, kein eigenes Backend und keine Analyse. Die App verfolgt dich nicht, zeigt keine Werbung und bindet keine SDKs von Dritten ein. Es wird keine Kennung für Werbung erzeugt.</p>
 <h2>Was auf dem Gerät bleibt</h2>
 <p>Netzname, Sicherheitsart, verstecktes Netz, Titel, Notiz und die gewählte Vorlage liegen zusammen mit dem Passwort im Schlüsselbund dieses iPhones (<code>kSecAttrAccessibleWhenUnlockedThisDeviceOnly</code>). Die ID des gerade gewählten Netzes liegt in den UserDefaults der App, nur für diese App lesbar.</p>
-<p>Das Widget bekommt über die App-Gruppe <code>group.de.konradkern.wlanqr</code> ein fertiges QR-Bild und einen kurzen Schnappschuss: Zustand, Netzname, Sicherheitsart, versteckt ja oder nein. Das Passwort steht in dieser Datei nicht als Text. Das Bild ist der scannbare Code, wenn das Widget freigeschaltet und ein Netz gewählt ist.</p>
+<p>Das Widget bekommt über die App-Gruppe <code>group.de.konradkern.wlanqr</code> ein fertiges QR-Bild und einen kurzen Schnappschuss: Zustand, Netzname, Sicherheitsart, versteckt ja oder nein. Das Passwort steht in dieser Datei nicht als Klartext. Der QR-Code enthält jedoch die WLAN-Zugangsdaten und muss vertraulich behandelt werden. Das Bild ist der scannbare Code, wenn das Widget freigeschaltet und ein Netz gewählt ist.</p>
 <p>Teilen, AirPrint und der Export von PDF oder Bild gehen nur, wenn du sie auslöst. Die App lädt diese Dateien nicht hoch.</p>
 <h2>Standort und WLAN-Name</h2>
 <p>Der Knopf „Aktuelles WLAN einsetzen“ bittet iOS um den Namen des WLANs, mit dem das iPhone verbunden ist. iOS gibt diesen Namen nur heraus, wenn die App den Standortzugriff „beim Verwenden“ und den genauen Standort hat, und wenn das Entwicklerprofil die Berechtigung Access WiFi Information trägt.</p>
 <p>Die App startet keine Ortung. Sie liest keine Koordinaten und speichert keinen Standort. Das Passwort des aktuellen WLANs liefert diese Schnittstelle nicht.</p>
 <h2>Käufe</h2>
-<p>Die Vorlagen Ferienwohnung, Café, Büro und Zuhause sowie das Widget sind ein einmaliger Kauf über den App Store (Produkt-ID <code>de.konradkern.wlanqr.unlock</code>). Die Zahlung läuft bei Apple. Die App erfährt, ob die Freischaltung gilt, nicht deine Zahlungsdaten.</p>
+<p>Der einmalige Kauf der vollständigen App wird über den App Store abgewickelt. Alle Funktionen sind enthalten, ohne In-App-Käufe oder Abonnement. Apple verarbeitet die Zahlung; der Entwickler erhält keine Zahlungsdaten.</p>
 <h2>Weitergabe</h2>
 <p>Eine Weitergabe an uns findet nicht statt, weil die Inhalte auf dem Gerät bleiben. Apple verarbeitet den Kauf nach Apples Bedingungen.</p>
 <h2>Speicherdauer</h2>
-<p>Alles bleibt, bis du das Netz in der App löschst oder die App vom iPhone entfernst. Beim Löschen der App entfernt iOS Schlüsselbund-Einträge dieser App, die UserDefaults und die App-Gruppe.</p>
+<p>Netzwerke bleiben im Schlüsselbund, bis du sie in der App löschst. Das Deinstallieren der App löscht Schlüsselbund-Einträge nicht zuverlässig. Entferne gespeicherte Netzwerke daher in der App, bevor du sie deinstallierst.</p>
 <h2>Deine Rechte</h2>
-<p>Auskunft, Löschung und die übrigen Rechte nach der DSGVO richtest du an die Support-Adresse oben. Weil wir keine personenbezogenen Daten auf einem Server halten, gibt es dort nichts herauszugeben; auf dem Gerät löschst du Netze selbst oder entfernst die App.</p>
+<p>Auskunft, Löschung und die übrigen Rechte nach der DSGVO richtest du an die Support-Adresse oben. Weil wir keine personenbezogenen Daten auf einem Server halten, gibt es dort nichts herauszugeben; auf dem Gerät löschst du Netze in der App.</p>
 <hr />
 <h1>Privacy policy — Wi-Fi QR &amp; Guest Card</h1>
 <p>Effective: 15 October 2026</p>
@@ -57,19 +57,19 @@
 <p>There is no account, no backend of our own, and no analytics. The app does not track you, does not show ads, and does not include third-party SDKs. It does not create an advertising identifier.</p>
 <h2>What stays on the device</h2>
 <p>Network name, security type, hidden flag, title, note, and the chosen template are stored with the password in this iPhone’s Keychain (<code>kSecAttrAccessibleWhenUnlockedThisDeviceOnly</code>). The id of the selected network is stored in the app’s UserDefaults, readable only by this app.</p>
-<p>The widget receives, through the app group <code>group.de.konradkern.wlanqr</code>, a finished QR image and a short snapshot: state, network name, security type, and whether the network is hidden. The password is not written in that file as text. The image is the scannable code when the widget is unlocked and a network is selected.</p>
+<p>The widget receives, through the app group <code>group.de.konradkern.wlanqr</code>, a finished QR image and a short snapshot: state, network name, security type, and whether the network is hidden. The password is not written in that file as plain text. However, the QR code contains the Wi-Fi credentials and must be treated as confidential. The image is the scannable code when the widget is unlocked and a network is selected.</p>
 <p>Sharing, AirPrint, and PDF or image export happen only when you start them. The app does not upload those files.</p>
 <h2>Location and the Wi-Fi name</h2>
 <p>“Use current Wi-Fi” asks iOS for the name of the network the iPhone is joined to. iOS returns that name only when the app has While Using location permission, Precise Location, and the Access WiFi Information entitlement on the provisioning profile.</p>
 <p>The app does not start location updates. It does not read coordinates and does not store a location. That API does not provide the Wi-Fi password.</p>
 <h2>Purchases</h2>
-<p>The holiday-home, café, office, and home templates, and the widget, are a one-time App Store purchase (product id <code>de.konradkern.wlanqr.unlock</code>). Apple processes the payment. The app learns whether the unlock is active, not your payment details.</p>
+<p>The complete app is a one-time paid download from the App Store. Every feature is included, without in-app purchases or subscriptions. Apple processes payment; the developer does not receive payment details.</p>
 <h2>Sharing with us</h2>
 <p>Nothing is sent to us, because the content stays on the device. Apple processes the purchase under Apple’s terms.</p>
 <h2>How long it stays</h2>
-<p>It stays until you delete the network in the app or delete the app from the iPhone. Deleting the app removes this app’s Keychain items, UserDefaults, and app-group files.</p>
+<p>Networks remain in the Keychain until you delete them in the app. Uninstalling the app does not reliably remove Keychain entries. Delete saved networks in the app before uninstalling it.</p>
 <h2>Your rights</h2>
-<p>Requests for access, deletion, and the other GDPR rights go to the support address above. We do not hold personal data on a server, so there is nothing there to export; on the device you delete networks yourself or remove the app.</p>
+<p>Requests for access, deletion, and the other GDPR rights go to the support address above. We do not hold personal data on a server, so there is nothing there to export; on the device, delete networks in the app.</p>
 </div>
 <footer>WLAN-QR &amp; Gästekarte · © 2026 Konrad Kern. Apple, iPhone, iPad und App Store sind Marken der Apple Inc.</footer>
 </main>
